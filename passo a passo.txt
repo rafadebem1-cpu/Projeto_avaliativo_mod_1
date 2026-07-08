@@ -1,0 +1,5 @@
+
+1- criacao de pasta "proj_avaliativo_mod_1"
+2- criacao de ambiente virtual .venv
+3- criacao arquivo README sem conteudo no momento
+4- criacao do git hub e subir as primeiras partes do projeto
