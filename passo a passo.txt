@@ -1,5 +1,53 @@
 
+parte 1
 1- criacao de pasta "proj_avaliativo_mod_1"
 2- criacao de ambiente virtual .venv
 3- criacao arquivo README sem conteudo no momento
 4- criacao do git hub e subir as primeiras partes do projeto
+5 - leitura das orientacoes do projeto
+6 - baixar os arquivos dataset
+7 - criar um arquivo ipynb para iniciar os codigos
+8 - segmentar em markdowns e codigos com a explicacao de cada parte do projeto
+
+parte 2
+9 - abrir o dataframe original e depois fazer uma copia e criar um df_tratado, onde sera feito o tratamento dos dados
+10 -analisei as colunas e apaguei 2 colunas que nao tem importancia para o modelo
+11- identificar e remover duplicados
+12- convertido coluna 'tipo' de str para numerica
+13- revisao de dados nulos novamente e preencher com a mediana
+14- gerar grafico das variaveis preditoras e analisar outliers
+15- gerar grafico barras da variavel alvo para verificar o desbalanceamento da base
+16- heatmap de correlacao pearson e analise dos resultados
+17- boxplot para identificar outliers e analise dos resultados
+
+parte 3
+18- criacao de 3 colunas novas (potencia, delta temperatura e carga mecanica)
+
+parte 4
+19- divisao e balanceamento de dados
+20- divisao dos dados em treino e teste
+21- balanceamento com o SMOTE criacao de amostras sinteticas para equilibrar dados de treinamento (classes com falha e sem falha) com 
+        a mesma quantidade de itens
+22- utilizado o STRATIFY para deixar treino e teste na mesma proporcao
+
+parte 5
+23- Escalonamento de variaveis - StandardScaler
+24- aplicacao do standarscaler para deixar as variaveis na mesma scala, evitando erro na interpretacao do modelo
+
+
+parte 6
+25- inclusao da explicacao sobre o que é KNN e Arvore de Decisao
+26- testando treino e teste para 3 valores de 'k' para o modelo KNN
+27- testando treino e teste para 3 valores em "arvore de decisao"
+28- inclusao das definicoes e exemplo de 'overfitting'
+
+
+parte 7
+29- comparativo de resultados do treino e teste dos modelos knn e arvore de decisao
+30- criacao de um dataframe unico contendo os resultados dos dois modelos
+31- criacao de um codigo para calcular o melhor modelo encontrado
+32- criacao de um arquivo adicional .txt para explicar a escolha do melhor modelo
+33- paracer conclusao do trabalho
+
+
+

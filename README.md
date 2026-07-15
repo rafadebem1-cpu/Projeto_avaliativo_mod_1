@@ -79,12 +79,12 @@ Projeto/
 │   └── manutencao_preditiva.csv
 │
 ├── projeto_avaliativo.ipynb
+|__ Explicação escolha modelo final.txt
+|__ passo a passo.txt (detalhamento o que foi feito em cada etapa do projeto)
 ├── requirements.txt
 ├── README.md
 └── anotacoes do Departamento de Engenharia.docx
 ```
-
----
 
 # 🛠 Tecnologias Utilizadas
 
@@ -159,19 +159,7 @@ O projeto utiliza Git para controle de versões.
 Estratégia de branches:
 
 * **main** → versão estável
-* **develop** → integração das funcionalidades
-
-Exemplos:
-
-```
-feature/eda
-feature/data-prep
-feature/feature-engineering
-feature/knn
-feature/decision-tree
-```
-
----
+* **development** → integração das funcionalidades
 
 # 📋 Requisitos Desenvolvidos
 
@@ -223,6 +211,7 @@ Link:
 * Documentação do NumPy
 * Documentação do Seaborn
 * Material didático da disciplina
+
 
 
 
