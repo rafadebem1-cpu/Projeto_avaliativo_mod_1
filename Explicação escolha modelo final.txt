@@ -1,7 +1,8 @@
 =============================================================================
 Explicação sobre a escolha do melhor modelo entre KNN e Arvore de Decisão
 =============================================================================
-        o objetivo não é apenas encontrar o modelo com a maior acurácia, mas sim identificar qual modelo consegue aprender melhor os padrões dos dados e generalizar esse aprendizado para novos casos.  
+        o objetivo não é apenas encontrar o modelo com a maior acurácia, mas sim identificar qual modelo  
+        consegue aprender melhor os padrões dos dados e generalizar esse aprendizado para novos casos.  
 
 ### O objetivo do projeto
 
@@ -111,30 +112,23 @@ A Árvore conseguiu encontrar regras que generalizaram muito bem para esses dado
 
 Imagine dois alunos.
 
-Aluno A
+Aluno A = Decorou a apostila.
 
-Decorou a apostila.
-
-Aluno B
-
-Entendeu a matéria.
+Aluno B = Entendeu a matéria.
 
 Na prova aparece uma questão diferente.
 
-Quem vai melhor?
-
-O aluno B.
+Quem vai melhor? O aluno B.
 
 Isso é generalização.
 
 A Árvore conseguiu aprender os padrões da máquina, e não apenas decorar exemplos.
 
-
 ===========================================
     Por que a Árvore foi melhor?
 ===========================================
 
-Observe a acurácia no teste.
+Observar a acurácia no teste.
 
 KNN = 97,55%
 
@@ -155,7 +149,7 @@ Ela será um dado novo.
     Outro ponto importante
 ================================================
 
-A Árvore possui uma vantagem enorme. Ela é interpretável.
+A Árvore possui uma vantagem importante: Ela é interpretável.
 
 Ela consegue mostrar quais características foram importantes.
 
@@ -200,9 +194,7 @@ Ela ficou excelente para responder questões que já conhecia, mas perdeu capaci
 
 Porque ela encontrou um equilíbrio.
 
-Ela não foi simples demais.
-
-Também não ficou complexa demais.
+Ela não foi simples demais. Também não ficou complexa demais.
 
 Conseguiu aprender os padrões principais sem decorar o treinamento.
 

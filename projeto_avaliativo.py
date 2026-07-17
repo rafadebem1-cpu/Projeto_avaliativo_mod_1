@@ -11,29 +11,20 @@ from sklearn.tree import DecisionTreeClassifier # arvore de decisao
 
 from imblearn.over_sampling import SMOTE
 
-
-
-
 # abrir o dataframe e atribuir na variavel "df"
 df = pd.read_csv("manutencao_preditiva.csv")
-
 
 df.head()
 
 # primeira visao do dataframe
-
-
 df. shape  
 
 # mostra o tamanho do dataframe, ou seja, 10.000 linhas e 14 colunas
-
 df.info()
 
 # Mostra resumo das informações gerais: colunas, tipos de dados e valores nulos (comando "df.info")
 # no caso do dataframe do projeto, ele tem 14 colunas e 10.000 linhas (comando  "df.shape")
 # sendo que 4 colunas possuem dados nulos 
-
-
 df.isnull(). sum()
 
 # Verifica valores vazios
@@ -51,37 +42,30 @@ df
 # Criar uma cópia para tratamento e chama-la de 'df_tratado'
 df_tratado = df.copy()
 
-
 ## Remover colunas que não agregam informação
 # como o projeto quer identificar falha essas duas colunas nao interferem
 ## 'udi' e 'id_produto'
-
 df_tratado.drop(columns= ["udi"], inplace=True)
 df_tratado.drop(columns= ["id_produto"], inplace=True)
 
 
 # procurar dados duplicados
-
 df_tratado.duplicated().sum()
 
 # visualizar as linhas duplicadas
-
 duplicados = df_tratado[df_tratado.duplicated()]
 
 duplicados
 
 # remover os duplicados
-
 df_tratado = df_tratado.drop_duplicates()
 
 # visualizacao apos dados duplicados removidos
-
 df_tratado.duplicated().sum()
 
 df_tratado.isnull(). sum()
 
 # converter a coluna "tipo" de str para numerica
-
 df_tratado = pd.get_dummies(
     df_tratado,
     columns=["tipo"],
@@ -91,9 +75,7 @@ df_tratado = pd.get_dummies(
 #visualizar df_tratado e conferir se apareceu a coluna "tipo" como numerica
 df_tratado.info()
 
-
 # revisao de dados nulos, pois apos apagar os dados duplicados, o dataframe ficom com 315 nulos
-
 df_tratado.isnull().sum()
 
 # considerando os dados nulos em 4 colunas (São ainda 315 valores nulos)
@@ -108,7 +90,6 @@ for coluna in [
     df_tratado[coluna] = df_tratado[coluna].fillna(df[coluna].median())
 
 # consulta dados nulos apos a inclusao da mediana
-
 df_tratado.isnull(). sum()
 
 df_tratado.head()
@@ -290,7 +271,6 @@ df_tratado["carga_mecanica"] = (
     df_tratado["desgaste_ferramenta_min"]
 )
 
-
 # Visualizar
 
 df_tratado[
@@ -303,7 +283,6 @@ df_tratado[
 ].head()
 
 # confirmar a existencia de dados nulos
-
 df_tratado.info()
 
 ## 1. Separar X e y
@@ -347,11 +326,8 @@ print(X.shape)
 print(y.shape)
 
 # Conferir os tamanhos
-
 print("Treino:", X_train.shape)
 print("Teste :", X_test.shape)
-
-# 
 
 print("Distribuição do conjunto de treino:")
 
@@ -371,9 +347,6 @@ print()
 print ("=== dados de teste ===")
 print(X_test.shape)
 print(y_test.shape)
-
-
-
 
 
 # Variáveis contínuas
@@ -416,7 +389,6 @@ X_test_knn[colunas_continuas] = scaler.transform(
 print("Escalonamento concluído!")
 
 # K N N
-
 # Testando vários valores de K
 
 k_valores = [3, 5, 7]
@@ -488,9 +460,6 @@ for profundidade in profundidades:
     print(f"Acurácia Treino: {acc_train:.4f}")
 
     print(f"Acurácia Teste : {acc_test:.4f}")
-
-
-
 
 
 # comparativo KNN
@@ -627,8 +596,6 @@ print(f"Acurácia Teste: {melhor_arvore['Acurácia Teste']:.2%}")
 print(f"Diferença: {melhor_arvore['Diferença']:.2%}")
 
 
-
-
 # criar um data frame unico contendo as informacoes do resultado dos dois modelos 
 
 # Lista para armazenar todos os resultados
@@ -757,7 +724,6 @@ print ('Descrição do Diagnósticos')
 print ("Bom ajuste → diferença entre treino e teste menor que 5%.")
 print ("Possível Overfitting → acurácia de treino muito alta (por exemplo, acima de 99%) e teste inferior.")
 print ("Possível Underfitting → acurácia baixa tanto no treino quanto no teste.")
-
 
 
 # ==========================

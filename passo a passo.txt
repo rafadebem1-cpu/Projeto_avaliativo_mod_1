@@ -1,3 +1,4 @@
+# nesse arquivo descrevi todo o trabalho a medida da realizacao de cada tarefa do projeto
 
 parte 1
 1- criacao de pasta "proj_avaliativo_mod_1"

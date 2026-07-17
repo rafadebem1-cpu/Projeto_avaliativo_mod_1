@@ -1,7 +1,11 @@
 
-## Desenvolvimento de IA para Análise Preditiva
+## Projeto Avaliativo - módulo 1 - 
+## Unidade Curricular:Fundamentos de Dados, Programação e Análise Preditiva com Python
 
-Projeto desenvolvido para a Situação de Aprendizagem (Projeto Avaliativo) do Módulo 1, com o objetivo de construir um pipeline completo de Ciência de Dados para prever falhas mecânicas em equipamentos industriais utilizando técnicas de Machine Learning.
+## Curso: Desenvolvimento de IA para Análise Preditiva - SCTEC
+
+
+Projeto desenvolvido para a Situação de Aprendizagem (Projeto Avaliativo) do Módulo 1, do curso Fundamentos de Dados, Programação e Análise Preditiva com Python com o objetivo de construir um pipeline completo de Ciência de Dados para prever falhas mecânicas em equipamentos industriais utilizando técnicas de Machine Learning.
 
 ---
 
@@ -73,17 +77,19 @@ O modelo com melhor desempenho na base de teste será recomendado como solução
 # 📁 Estrutura do Projeto
 
 ```text
-Projeto/
+Projeto_avaliativo_mod_1
 │
 ├── dataset/
 │   └── manutencao_preditiva.csv
 │
 ├── projeto_avaliativo.ipynb
+|__ projeto_avaliativo.py
 |__ Explicação escolha modelo final.txt
 |__ passo a passo.txt (detalhamento o que foi feito em cada etapa do projeto)
 ├── requirements.txt
 ├── README.md
 └── anotacoes do Departamento de Engenharia.docx
+
 ```
 
 # 🛠 Tecnologias Utilizadas
@@ -180,6 +186,7 @@ Estratégia de branches:
 
 Algumas melhorias que poderão ser implementadas:
 
+* avaliar o modelo com as métricas: matriz de confusão, precision, recall e F1-score
 * Interface Web utilizando Streamlit
 * Dashboard interativo
 * Validação Cruzada (Cross Validation)
@@ -211,6 +218,7 @@ Link:
 * Documentação do NumPy
 * Documentação do Seaborn
 * Material didático da disciplina
+* Aulas gravadas SCTEC
 
 
 
